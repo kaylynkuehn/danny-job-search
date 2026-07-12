@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danny's Remote Job Search</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f6f7f9; color: #1a1d21; line-height: 1.5; padding: 20px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+header { margin-bottom: 20px; }
+h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.sub { color: #5a6472; font-size: 14px; margin-top: 4px; }
+.profile { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 14px 16px; margin: 16px 0; font-size: 13px; color: #3a424e; }
+.profile b { color: #1a1d21; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-radius: 8px; padding: 8px 30px 8px 12px; font-size: 13px; color: #1a1d21; cursor: pointer; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%235a6472' stroke-width='1.5' fill='none'/></svg>"); background-repeat: no-repeat; background-position: right 10px center; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; align-items: center; }
+.tag { background: #eef1f4; border: 1px solid #dce0e6; border-radius: 999px; padding: 5px 10px 5px 12px; font-size: 12px; color: #3a424e; display: inline-flex; align-items: center; gap: 6px; }
+.tag button { background: none; border: none; cursor: pointer; color: #8a94a2; font-size: 14px; line-height: 1; padding: 0; }
+.tag button:hover { color: #d1435b; }
+.addtag { background: #fff; border: 1px dashed #c3cad3; border-radius: 999px; padding: 5px 12px; font-size: 12px; color: #5a6472; cursor: pointer; }
+.count { font-size: 13px; color: #5a6472; margin-bottom: 12px; }
+.card { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 16px; margin-bottom: 12px; transition: box-shadow .15s; }
+.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+.card.down { opacity: 0.45; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.card h3 { font-size: 16px; font-weight: 650; }
+.card h3 a { color: #1a1d21; text-decoration: none; }
+.card h3 a:hover { color: #2f6fed; text-decoration: underline; }
+.src { font-size: 13px; color: #5a6472; margin-top: 2px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #eef1f4; color: #4a5361; }
+.badge.live { background: #e6f4ea; color: #1e7d44; }
+.badge.remote { background: #e8f0fe; color: #2f6fed; }
+.badge.focus { background: #f3ecfb; color: #7b3fbf; }
+.badge.salary { background: #fef4e6; color: #b5730f; }
+.badge.date { background: #eef1f4; color: #5a6472; }
+.rate { display: flex; gap: 6px; }
+.rate button { width: 32px; height: 32px; border: 1px solid #dce0e6; background: #fff; border-radius: 8px; cursor: pointer; font-size: 15px; line-height: 1; display: flex; align-items: center; justify-content: center; }
+.rate button.up.on { background: #e6f4ea; border-color: #1e7d44; }
+.rate button.down.on { background: #fde8ec; border-color: #d1435b; }
+.desc { font-size: 13px; color: #4a5361; margin-top: 10px; }
+.searchbox { margin-top: 20px; background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; overflow: hidden; }
+.searchbox summary { padding: 14px 16px; cursor: pointer; font-size: 14px; font-weight: 600; color: #3a424e; list-style: none; }
+.searchbox summary::-webkit-details-marker { display: none; }
+.searchbox .body { padding: 0 16px 16px; font-size: 13px; color: #4a5361; }
+.searchbox textarea { width: 100%; border: 1px solid #d3d8de; border-radius: 8px; padding: 10px; font-size: 13px; font-family: inherit; resize: vertical; min-height: 70px; margin-top: 8px; }
+.note { font-size: 12px; color: #8a94a2; margin-top: 18px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Danny's Remote Job Search</h1>
+<div class="sub">Fully remote VP / Director roles - investment operations - KYC/AML - fund admin - client onboarding</div>
+</header>
+<div class="profile">
+<b>Danny Murray</b> - VP Investment Operations Onboarding, Blue Owl Capital. Prior: Mizuho (AVP Client Onboarding), MUFG (AVP KYC Team Lead). <b>Certs:</b> CAMS, Series 99, SIE. <b>Targeting:</b> fully remote, VP/Director, asset management / PE / hedge funds / fintech / wealth management.
+</div>
+<div class="controls">
+<select id="f-focus">
+<option value="">All focus areas</option>
+<option value="Investment Ops">Investment Operations</option>
+<option value="KYC/AML">KYC / AML</option>
+<option value="Fund Admin">Fund Administration</option>
+<option value="Client Onboarding">Client Onboarding</option>
+</select>
+<select id="f-level">
+<option value="">All levels</option>
+<option value="VP">VP</option>
+<option value="Director">Director</option>
+</select>
+<select id="f-industry">
+<option value="">All industries</option>
+<option value="Asset Mgmt">Asset Management</option>
+<option value="PE/Hedge">PE / Hedge Funds</option>
+<option value="Fintech">Fintech</option>
+<option value="Wealth">Wealth Management</option>
+</select>
+<select id="f-salary">
+<option value="0">Any salary</option>
+<option value="100000">$100k+</option>
+<option value="130000">$130k+</option>
+<option value="150000">$150k+</option>
+<option value="180000">$180k+</option>
+<option value="200000">$200k+</option>
+</select>
+</div>
+<div class="tags" id="tags"><button class="addtag" id="addtag">+ Add preference</button></div>
+<div class="count" id="count"></div>
+<div id="cards"></div>
+<details class="searchbox">
+<summary>Refine this search</summary>
+<div class="body">Tell me what to change and I'll retune the search - tighter salary floor, drop a company, add a keyword, etc.<textarea id="prompt" placeholder="e.g. only roles paying above $180k, add crypto as a focus area"></textarea></div>
+</details>
+<div class="note">Cards are live search feeds tuned to Danny's profile. Salary and date fill in when specific postings are added.</div>
+</div>
+<script>
+const FEEDS = [
+{ title: "Investment Operations - Remote", src: "Indeed - live feed", url: "https://www.indeed.com/q-investment-operations-remote-jobs.html", focus: "Investment Ops", level: "VP", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Remote investment operations roles across asset managers and fund shops." },
+{ title: "VP Bank / Investment Operations - Remote", src: "Glassdoor - live feed", url: "https://www.glassdoor.com/Job/remote-vp-bank-operations-remote-jobs-SRCH_IL.0,6_IS11047_KO7,32.htm", focus: "Investment Ops", level: "VP", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "VP-level operations roles at banks and investment firms, remote-filtered." },
+{ title: "VP Finance / Operations - Remote", src: "Built In - live feed", url: "https://builtin.com/jobs/remote/finance/search/vp-finance", focus: "Investment Ops", level: "VP", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "VP finance and ops roles at tech-forward and fintech companies." },
+{ title: "Director - Remote AML / KYC", src: "ZipRecruiter - live feed", url: "https://www.ziprecruiter.com/Jobs/Director-Remote-Aml-Kyc", focus: "KYC/AML", level: "Director", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Director-level AML/KYC roles - CAMS is a strong match here." },
+{ title: "Remote AML / KYC Compliance", src: "Indeed - live feed", url: "https://www.indeed.com/q-remote-aml-kyc-compliance-jobs.html", focus: "KYC/AML", level: "VP", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "AML/KYC compliance and onboarding roles across financial services." },
+{ title: "PE Fund Administration - Remote", src: "ZipRecruiter - live feed", url: "https://www.ziprecruiter.com/Jobs/Private-Equity-Fund-Administration-Remote", focus: "Fund Admin", level: "Director", industry: "PE/Hedge", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Fund administration roles at PE and hedge fund administrators." },
+{ title: "PE and Hedge Fund Accounting - Remote (SEI)", src: "SEI Careers - employer", url: "https://careers.seic.com/global/en/job/R0030421/Manager-Private-Equity-and-Hedge-Fund-Accounting-REMOTE", focus: "Fund Admin", level: "Director", industry: "PE/Hedge", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Direct employer posting at SEI - fund accounting and administration, remote." },
+{ title: "Wealth Management - Remote", src: "Glassdoor - live feed", url: "https://www.glassdoor.com/Job/remote-wealth-management-jobs-SRCH_IL.0,6_IS11047_KO7,24.htm", focus: "Client Onboarding", level: "Director", industry: "Wealth", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Remote wealth management roles including client onboarding leadership." },
+{ title: "Management and Finance - Remote", src: "We Work Remotely - live feed", url: "https://weworkremotely.com/categories/remote-management-and-finance-jobs", focus: "Client Onboarding", level: "Director", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-07-11", desc: "Fully-remote management and finance roles at remote-first companies." }
+];
+function fmtDate(iso){ if(!iso) return ""; const d=new Date(iso+"T00:00:00"); if(isNaN(d)) return ""; return d.toLocaleDateString("en-US",{month:"short",day:"numeric"}); }
+const store={ get(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } }, set(k,v){ localStorage.setItem(k,JSON.stringify(v)); } };
+let ratings=store.get('danny_ratings',{});
+let prefs=store.get('danny_prefs',[]);
+function renderTags(){
+const el=document.getElementById('tags');
+el.querySelectorAll('.tag').forEach(t=>t.remove());
+const addBtn=document.getElementById('addtag');
+prefs.forEach((p,i)=>{
+const t=document.createElement('span');
+t.className='tag';
+t.innerHTML=p+' <button title="remove">&times;</button>';
+t.querySelector('button').onclick=()=>{ prefs.splice(i,1); store.set('danny_prefs',prefs); renderTags(); };
+el.insertBefore(t,addBtn);
+});
+}
+document.getElementById('addtag').onclick=()=>{
+const v=prompt('Add a preference (e.g. no crypto):');
+if(v && v.trim()){ prefs.push(v.trim()); store.set('danny_prefs',prefs); renderTags(); }
+};
+function render(){
+const ff=document.getElementById('f-focus').value;
+const fl=document.getElementById('f-level').value;
+const fi=document.getElementById('f-industry').value;
+const fs=parseInt(document.getElementById('f-salary').value,10)||0;
+const cards=document.getElementById('cards');
+cards.innerHTML='';
+let shown=0;
+FEEDS.forEach((j,idx)=>{
+if(ff && j.focus!==ff) return;
+if(fl && j.level!==fl) return;
+if(fi && j.industry!==fi) return;
+if(fs && j.salaryMin!=null && j.salaryMin<fs) return;
+shown++;
+const dateBadge=j.datePosted?'<span class="badge date">Posted '+fmtDate(j.datePosted)+'</span>':'';
+const salBadge=j.salaryLabel?'<span class="badge salary">'+j.salaryLabel+'</span>':'';
+const r=ratings[idx]||0;
+const c=document.createElement('div');
+c.className='card'+(r===-1?' down':'');
+c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta"><span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+'<span class="badge live">Live feed</span></div><div class="desc">'+j.desc+'</div>';
+const btns=c.querySelectorAll('.rate button');
+btns[0].onclick=()=>{ ratings[idx]=r===1?0:1; store.set('danny_ratings',ratings); render(); };
+btns[1].onclick=()=>{ ratings[idx]=r===-1?0:-1; store.set('danny_ratings',ratings); render(); };
+cards.appendChild(c);
+});
+document.getElementById('count').textContent=shown+' of '+FEEDS.length+' feeds';
+}
+['f-focus','f-level','f-industry','f-salary'].forEach(id=>document.getElementById(id).onchange=render);
+renderTags();
+render();
+</script>
+</body>
+</html>
