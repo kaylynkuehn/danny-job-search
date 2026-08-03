@@ -65,3 +65,16 @@ Search terms: "Fund Administration", "KYC" / "AML" / "BSA", "Investment Operatio
 1. Re-read these rules. 2. Search all sources. 3. Curate to the rules; drop generic/off-target and any closed postings. 4. Update `jobs.json` and commit (refreshes the GitHub Pages dashboard). 5. Text Danny the top 3 via Messages.
 
 Semi-attended: needs the Mac awake with Chrome + the Claude extension + Messages open, and may prompt to reconnect the browser. The repo is public (required for free GitHub Pages) - keep phone numbers and any tokens in a local `.env`, never committed.
+
+
+## Weekly text to Danny (template)
+
+Send from Kaylyn's Messages to the emoji-heart (Danny) contact, then the live dashboard link. Format:
+
+```
+Here's your weekly remote search round up
+Top three picks
+- Title, Company (salary range if avail)
+- Title, Company (salary range if avail)
+- Title, Company (salary range if avail)
+```
