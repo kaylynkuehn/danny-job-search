@@ -1,51 +1,67 @@
 # Danny's Remote Job Search
 
-Automated remote job search dashboard for Danny Murray.
+Automated weekly dashboard of fully remote VP/Director roles for **Danny Murray**, curated to his profile. Live site: https://kaylynkuehn.github.io/danny-job-search/
 
-**Live site:** https://kaylynkuehn.github.io/danny-job-search/
+Data lives in `jobs.json`; the page (`index.html`) renders from it. Full profile is in `danny-profile.md`.
 
-## What this is
+---
 
-A single-page dashboard (`index.html`) that lists fully remote VP / Director roles in
-investment operations, KYC/AML, fund administration, and client onboarding. It has
-filters (focus area, level, industry, salary), thumbs up/down ratings, and preference
-tags. Ratings and preferences are stored in the browser via `localStorage`.
+## Candidate profile (summary)
 
-## Candidate profile
+Danny Murray - VP Investment Operations Onboarding, Blue Owl Capital. Prior: Mizuho (AVP Client Onboarding), MUFG (KYC Onboarding Team Lead). Certs: CAMS, Series 99, SIE.
 
-Danny Murray - VP Investment Operations Onboarding, Blue Owl Capital.
-Prior: Mizuho (AVP Client Onboarding), MUFG (AVP KYC Team Lead).
-Certs: CAMS, Series 99, SIE.
-Targeting: fully remote, VP/Director, asset management / PE / hedge funds / fintech / wealth management.
+Targets: fully remote (US), VP / Director / Senior Director / Head, in KYC/AML/BSA, client & investor onboarding, investment operations, and fund administration, within asset management, private credit, PE, hedge funds, alternative investments, banking, fintech, or wealth management.
 
-## Current state
+---
 
-- `index.html` is committed and served via GitHub Pages from the `main` branch (root).
-- Job cards are currently hardcoded in the `FEEDS` array inside `index.html`.
+## Sources to search (every run)
 
-## Planned automation (to be built with Claude Code on the Mac Mini)
+Search all of these, not just LinkedIn:
 
-1. **job-search.js** (Node) - fetch real postings from JSearch (RapidAPI), Remotive, and
-   Adzuna using Danny's keywords x (VP, Director, Head of) with remote-only US filters.
-   Dedupe, filter to remote VP/Director, then score each 1-10 against Danny's profile via
-   the Anthropic API and keep the top matches with a one-line reason. Write `jobs.json`
-   (title, company, salary, location/remote, url, datePosted, focus, level, industry,
-   score, reason).
-2. **Rewire dashboard** - render cards from `jobs.json` instead of the hardcoded `FEEDS`
-   array. Keep the exact same design, filters, thumbs, and preference tags. Sort by score.
-   Populate salary/date badges from real data (omit salary badge if not listed).
-3. **Publish** - after each run, commit and push `jobs.json` + `index.html` to this repo:
-   `git remote add origin https://github.com/kaylynkuehn/danny-job-search.git`
-4. **iMessage** - after a successful run, text Danny via osascript/AppleScript:
-   "Here's your remote job roundup: <live URL>" + top 3 (Title / Company / Salary).
-5. **Schedule** - launchd plist running every 3 days at 8am, with logging.
-6. **Error handling** - if all APIs fail, do not text Danny; log instead. If salary is
-   missing, omit the badge rather than guessing.
+1. **LinkedIn** (logged in) - filters `f_WT=2` (remote) + `f_E=4,5,6` (mid-senior/director/executive), sorted by date.
+2. **Indeed** (logged in) - remote filter on, sorted by date.
+3. **Independent web search, ATS-targeted** - restrict to direct applicant-tracking systems: `boards.greenhouse.io`, `job-boards.greenhouse.io`, `jobs.lever.co`, `*.myworkdayjobs.com`, `jobs.ashbyhq.com`. This is where real individual postings live.
+4. **RemoteHunter** - https://www.remotehunter.com/jobs?search=<term> (no login needed). Job links are `/apply-with-ai/<id>`.
 
-## Notes
+Search terms: "Fund Administration", "KYC" / "AML" / "BSA", "Investment Operations", "Client Onboarding" / "Investor Onboarding", plus senior compliance titles ("BSA Officer", "MLRO", "Head of Compliance", "Financial Crimes").
 
+## Curation rules
+
+- **Fully remote (US) is non-negotiable.** Drop anything hybrid or on-site, even if otherwise perfect (e.g. an in-office private-credit role is out).
+- **Level: VP / Director / Senior Director / Head only.** Exclude analyst, associate, and plain manager roles unless they are genuine senior leadership (a designated officer, or a function lead managing a team).
+- **On-focus:** KYC/AML/BSA, client/investor onboarding, investment operations, fund administration.
+- **On-industry:** asset mgmt, private credit, PE, hedge funds, alt investments, banking, fintech, wealth mgmt. Nonprofit/philanthropic-fund roles are adjacent - allow only when the function is a strong fund-admin/compliance fit, and label the industry honestly.
+- Show a salary badge only when the posting lists pay. Never invent salary or dates.
+
+## Exclusions (what "generic / off-target" means)
+
+- **Generic aggregator pages** - jobs.com, ZipRecruiter, Glassdoor, Zippia, JobToday, and Indeed/Google SEO landing pages ("finance jobs", "remote AML jobs"). These are category pages, not real postings. Skip them; use the direct company/ATS link instead.
+- **Off-target roles that only match keywords loosely** - marketing/brand, product management, strategic finance/FP&A, customer success, "co-founder (equity only)" and stealth-startup CEO gigs, recruiter pitches. LinkedIn free-text surfaces many of these; read the actual role before including.
+
+## Liveness rule (important)
+
+**Remove any posting no longer accepting applications - on every source, not just LinkedIn.** Re-verify each carried-over role each run.
+
+- LinkedIn: a closed posting shows a red "No longer accepting applications" banner on the job page (visible when logged in). LinkedIn blocks automated fetching via robots.txt, so check this in the logged-in browser.
+- ATS/other: a closed role usually 404s or shows an inactive/closed notice.
+
+## Learnings (2026-08-03 run)
+
+- LinkedIn free-text search with the remote+senior filters is **noisy** - top results were co-founder/equity gigs, marketing, product, and AI-startup roles. Curation must read each posting, not trust the title.
+- Open web search returns mostly **aggregator SEO pages**; ATS-restricted search is what surfaces genuine direct postings.
+- Liveness matters a lot: **6 of 9** carried-over LinkedIn roles were already closed (Aventum, OSL MLRO, Axonic, Alpaca, Strata, Nymbus). Always re-verify before publishing.
+- Senior remote **KYC/AML** roles are scarce on any given day; fund-administration leadership is the most reliable category for Danny.
+
+## Dashboard architecture
+
+- `index.html` fetches `jobs.json` and renders cards. Weekly refresh only edits `jobs.json`.
+- Thumbs up/down persist in `localStorage` keyed by **job URL** (`danny_ratings_v2`), so ratings survive refreshes. Do not revert to index-based keys.
+- A "Last updated" stamp reads from `jobs.json` `updated`.
+- Each job object: `title, src, url, focus, level, industry, salaryMin, salaryLabel, datePosted, desc`. `src` drives the source badge (LinkedIn / Indeed / RemoteHunter / Direct / Web).
 - Do not touch the `localStorage` wrapper or the overall visual design when editing.
-- The repo is public (required for free GitHub Pages), so the dashboard URL is publicly
-  accessible - keep API keys and phone numbers in a local `.env` file, never committed.
-# danny-job-search
-Automated remote job search dashboard for Danny
+
+## Weekly automation (Wednesdays)
+
+1. Re-read these rules. 2. Search all sources. 3. Curate to the rules; drop generic/off-target and any closed postings. 4. Update `jobs.json` and commit (refreshes the GitHub Pages dashboard). 5. Text Danny the top 3 via Messages.
+
+Semi-attended: needs the Mac awake with Chrome + the Claude extension + Messages open, and may prompt to reconnect the browser. The repo is public (required for free GitHub Pages) - keep phone numbers and any tokens in a local `.env`, never committed.
