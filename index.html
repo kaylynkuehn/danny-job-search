@@ -21,7 +21,8 @@ select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-r
 .tag button { background: none; border: none; cursor: pointer; color: #8a94a2; font-size: 14px; line-height: 1; padding: 0; }
 .tag button:hover { color: #d1435b; }
 .addtag { background: #fff; border: 1px dashed #c3cad3; border-radius: 999px; padding: 5px 12px; font-size: 12px; color: #5a6472; cursor: pointer; }
-.count { font-size: 13px; color: #5a6472; margin-bottom: 12px; }
+.count { font-size: 13px; color: #5a6472; margin-bottom: 4px; }
+.updated { font-size: 12px; color: #8a94a2; margin-bottom: 12px; }
 .card { background: #fff; border: 1px solid #e4e7eb; border-radius: 12px; padding: 16px; margin-bottom: 12px; transition: box-shadow .15s; }
 .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
 .card.down { opacity: 0.45; }
@@ -89,29 +90,23 @@ select { appearance: none; background: #fff; border: 1px solid #d3d8de; border-r
 </select>
 </div>
 <div class="tags" id="tags"><button class="addtag" id="addtag">+ Add preference</button></div>
-<div class="count" id="count"></div>
+<div class="count" id="count">Loading postings...</div>
+<div class="updated" id="updated"></div>
 <div id="cards"></div>
 <details class="searchbox">
 <summary>Refine this search</summary>
 <div class="body">Tell me what to change and I'll retune the search - tighter salary floor, drop a company, add a keyword, etc.<textarea id="prompt" placeholder="e.g. only roles paying above $180k, add crypto as a focus area"></textarea></div>
 </details>
-<div class="note">Real postings pulled from LinkedIn's public job listings, tuned to Danny's profile. Salary badges appear when a posting lists pay.</div>
+<div class="note">Real postings pulled from LinkedIn + Indeed public job listings, curated to Danny's profile. Salary badges appear when a posting lists pay. Refreshed weekly.</div>
 </div>
 <script>
-const FEEDS = [
-{ title: "Director, Investment Operations (Philadelphia / Delaware Lead)", src: "Strata - via LinkedIn", url: "https://www.linkedin.com/jobs/view/director-investment-operations-%E2%80%93-greater-philadelphia-delaware-lead-at-strata-4429411391", focus: "Investment Ops", level: "Director", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-06-28", desc: "Investment operations leadership at a financial services firm; regional lead role. Base location Wilmington, DE." },
-{ title: "Vice President, Operations", src: "Aventum Search - via LinkedIn", url: "https://www.linkedin.com/jobs/view/vice-president-operations-at-aventum-search-4434789495", focus: "Investment Ops", level: "VP", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-07-05", desc: "VP-level operations role at an investment/search firm. Base location New York, NY." },
-{ title: "SVP, Banking Operations", src: "Nymbus - via LinkedIn", url: "https://www.linkedin.com/jobs/view/svp-banking-operations-at-nymbus-4435335487", focus: "Investment Ops", level: "VP", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-07-05", desc: "Senior VP over banking and financial operations at a fintech. Base location Jacksonville, FL." },
-{ title: "Director, Fund Administration (Accounting)", src: "Juniper Square - via LinkedIn", url: "https://www.linkedin.com/jobs/view/director-fund-administration-accounting-at-juniper-square-4414779706", focus: "Fund Admin", level: "Director", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-06-28", desc: "Fund administration and accounting leadership at a fund-tech platform. Remote (US)." },
-{ title: "Director - Real Estate Credit, Fund Administration", src: "Juniper Square - via LinkedIn", url: "https://www.linkedin.com/jobs/view/director-real-estate-credit-fund-administration-accounting-at-juniper-square-4424610451", focus: "Fund Admin", level: "Director", industry: "PE/Hedge", salaryMin: null, salaryLabel: "", datePosted: "2026-06-28", desc: "Fund administration for real estate credit funds. Remote (US)." },
-{ title: "Director, Digital Asset & Brokerage Operations", src: "Alpaca - via LinkedIn", url: "https://www.linkedin.com/jobs/view/director-digital-asset-brokerage-operations-at-alpaca-4426380215", focus: "Investment Ops", level: "Director", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-06-12", desc: "Director over brokerage and digital-asset operations at a fintech. Base location Miami, FL." },
-{ title: "MLRO (US) - Money Laundering Reporting Officer", src: "OSL - via LinkedIn", url: "https://www.linkedin.com/jobs/view/mlro-us-at-osl-4429828197", focus: "KYC/AML", level: "Director", industry: "Fintech", salaryMin: null, salaryLabel: "", datePosted: "2026-06-28", desc: "US Money Laundering Reporting Officer - strong CAMS fit. Remote (US)." },
-{ title: "Director, Client Integration (DTCC)", src: "Axonic Insurance - via LinkedIn", url: "https://www.linkedin.com/jobs/view/director-client-integration-dtcc-at-axonic-insurance-4430317496", focus: "Client Onboarding", level: "Director", industry: "Asset Mgmt", salaryMin: null, salaryLabel: "", datePosted: "2026-06-21", desc: "Client integration / onboarding leadership tied to DTCC processing. Remote (US)." },
-{ title: "Registered Fund Administration, Director", src: "PINE Advisor Solutions - via LinkedIn", url: "https://www.linkedin.com/jobs/view/4442164096/", focus: "Fund Admin", level: "Director", industry: "Asset Mgmt", salaryMin: 135000, salaryLabel: "$135K-$175K", datePosted: "2026-07-20", desc: "Named Principal Financial Officer / Treasurer for 1940 Act registered funds; oversees fund administration, regulatory filings (N-CSR, N-PORT), and audit/tax. Fully remote (US), 10+ yrs fund accounting/administration; Denver hybrid preferred." }
-];
+// Job data is loaded from jobs.json so the weekly refresh only touches the data file.
+let FEEDS = [];
+let LAST_UPDATED = "";
 function fmtDate(iso){ if(!iso) return ""; const d=new Date(iso+"T00:00:00"); if(isNaN(d)) return ""; return d.toLocaleDateString("en-US",{month:"short",day:"numeric"}); }
 const store={ get(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } }, set(k,v){ localStorage.setItem(k,JSON.stringify(v)); } };
-let ratings=store.get('danny_ratings',{});
+// Ratings are keyed by job URL (stable across refreshes) so thumbs survive weekly updates.
+let ratings=store.get('danny_ratings_v2',{});
 let prefs=store.get('danny_prefs',[]);
 function renderTags(){
 const el=document.getElementById('tags');
@@ -137,7 +132,7 @@ const fs=parseInt(document.getElementById('f-salary').value,10)||0;
 const cards=document.getElementById('cards');
 cards.innerHTML='';
 let shown=0;
-FEEDS.forEach((j,idx)=>{
+FEEDS.forEach((j)=>{
 if(ff && j.focus!==ff) return;
 if(fl && j.level!==fl) return;
 if(fi && j.industry!==fi) return;
@@ -145,20 +140,25 @@ if(fs && j.salaryMin!=null && j.salaryMin<fs) return;
 shown++;
 const dateBadge=j.datePosted?'<span class="badge date">Posted '+fmtDate(j.datePosted)+'</span>':'';
 const salBadge=j.salaryLabel?'<span class="badge salary">'+j.salaryLabel+'</span>':'';
-const r=ratings[idx]||0;
+const _s=j.src||'';const srcName=/Indeed/i.test(_s)?'Indeed':/LinkedIn/i.test(_s)?'LinkedIn':/RemoteHunter/i.test(_s)?'RemoteHunter':/Greenhouse|Lever|Workday|Ashby|Careers/i.test(_s)?'Direct':'Web';const srcBadge='<span class="badge live">'+srcName+'</span>';
+const r=ratings[j.url]||0;
 const c=document.createElement('div');
 c.className='card'+(r===-1?' down':'');
-c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta"><span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+'<span class="badge live">LinkedIn</span></div><div class="desc">'+j.desc+'</div>';
+c.innerHTML='<div class="card-top"><div><h3><a href="'+j.url+'" target="_blank" rel="noopener">'+j.title+'</a></h3><div class="src">'+j.src+'</div></div><div class="rate"><button class="up '+(r===1?'on':'')+'" title="Interested">&#128077;</button><button class="down '+(r===-1?'on':'')+'" title="Not for me">&#128078;</button></div></div><div class="meta"><span class="badge remote">Remote</span><span class="badge focus">'+j.focus+'</span><span class="badge">'+j.level+'</span><span class="badge">'+j.industry+'</span>'+salBadge+dateBadge+srcBadge+'</div><div class="desc">'+j.desc+'</div>';
 const btns=c.querySelectorAll('.rate button');
-btns[0].onclick=()=>{ ratings[idx]=r===1?0:1; store.set('danny_ratings',ratings); render(); };
-btns[1].onclick=()=>{ ratings[idx]=r===-1?0:-1; store.set('danny_ratings',ratings); render(); };
+btns[0].onclick=()=>{ ratings[j.url]=r===1?0:1; store.set('danny_ratings_v2',ratings); render(); };
+btns[1].onclick=()=>{ ratings[j.url]=r===-1?0:-1; store.set('danny_ratings_v2',ratings); render(); };
 cards.appendChild(c);
 });
 document.getElementById('count').textContent=shown+' of '+FEEDS.length+' postings';
+document.getElementById('updated').textContent=LAST_UPDATED?('Last updated '+fmtDate(LAST_UPDATED)+', '+LAST_UPDATED.slice(0,4)):'';
 }
 ['f-focus','f-level','f-industry','f-salary'].forEach(id=>document.getElementById(id).onchange=render);
 renderTags();
-render();
+fetch('jobs.json?ts='+Date.now())
+.then(r=>r.json())
+.then(data=>{ FEEDS=data.jobs||[]; LAST_UPDATED=data.updated||''; render(); })
+.catch(()=>{ document.getElementById('count').textContent='Could not load postings.'; });
 </script>
 </body>
 </html>
