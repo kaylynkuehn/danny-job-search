@@ -78,3 +78,14 @@ Top three picks
 - Title, Company (salary range if avail)
 - Title, Company (salary range if avail)
 ```
+
+
+## Preferences (soft signals, not filters)
+
+On top of the hard rules above, favor these when choosing among qualified roles and when ordering the weekly top 3 for Danny:
+
+- Interesting, well-known, or up-and-coming **fintech** and financial brands (hot/popular names, notable startups) over generic or unknown employers.
+- Companies with strong **startup culture** (fast-moving, modern, product-driven).
+- Lead the top 3 with the most on-brand fintech/startup fits when they clear every hard rule.
+
+These are tie-breakers and ranking signals only. Never relax the non-negotiables (fully remote US, senior level, on-focus function) just because a brand is exciting.
