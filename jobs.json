@@ -1,17 +1,137 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-23",
   "jobs": [
     {
-      "title": "Senior Product Leader - Accounting & Credit Fund Administration",
-      "src": "Alter Domus - via LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4430987336/",
+      "title": "Deputy BSA Officer, Financial Crime Compliance & Risk",
+      "src": "Marqeta - Careers",
+      "url": "https://job-boards.greenhouse.io/mqreferrals/jobs/8055234",
+      "focus": "KYC/AML/BSA",
+      "level": "VP",
+      "industry": "Fintech",
+      "salaryMin": 175800,
+      "salaryLabel": "$175.8K-$219.7K",
+      "datePosted": null,
+      "desc": "Deputy to the BSA Officer at a major card-issuing fintech. Owns financial crime compliance program design, regulatory engagement and sponsor-bank oversight. Fully remote US (Flex First; Oakland office optional). 13+ yrs. National band $175,800-$219,700; premium tiers run higher. Verified active Aug 23."
+    },
+    {
+      "title": "Senior Director, Fund Administration (Real Estate Credit)",
+      "src": "Juniper Square - Careers",
+      "url": "https://careers.redpoint.com/companies/juniper-square/jobs/86758886-senior-director-fund-administration-real-estate-credit",
       "focus": "Fund Admin",
-      "level": "Director",
-      "industry": "PE/Hedge",
+      "level": "Senior Director",
+      "industry": "Fintech",
+      "salaryMin": 190000,
+      "salaryLabel": "$190K-$230K",
+      "datePosted": null,
+      "desc": "Senior leadership over real-estate-credit fund administration at a fund-tech platform. Fully remote US available. $190,000-$230,000 base plus bonus and equity. Verified active Aug 23."
+    },
+    {
+      "title": "BSA Officer / Money Laundering Reporting Officer (MLRO)",
+      "src": "KAST - via LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4455713503/",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
       "salaryMin": null,
       "salaryLabel": "",
-      "datePosted": "2026-08-02",
-      "desc": "Private-markets / fund-administration firm (private credit & PE). Senior leadership over accounting & credit fund administration. Remote (US). Verified active Aug 3. Note: product-leaning vs pure ops."
+      "datePosted": "2026-08-18",
+      "desc": "Designated BSA Officer / MLRO owning the full AML, CFT, OFAC and BSA program - SAR/CTR determinations, CIP/EDD, sanctions screening, FinCEN 314(a)/(b), and direct reporting to the CEO and Board. Sponsor-bank liaison. Fully remote, must reside in the US. 5+ yrs BSA/AML or MLRO experience. Up-and-coming crypto-card fintech. NEW this run."
+    },
+    {
+      "title": "Head of Compliance (Americas)",
+      "src": "OpenFX - Careers",
+      "url": "https://job-boards.greenhouse.io/openfx/jobs/4993976008",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Americas compliance leadership at an up-and-coming FX/payments fintech. AML/BSA program ownership. Remote (USA) or Miami. 10+ yrs. No salary listed. Verified active Aug 23."
+    },
+    {
+      "title": "Head of Fund Administration",
+      "src": "Nottingham - via LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4456673392/",
+      "focus": "Fund Admin",
+      "level": "Head",
+      "industry": "Asset Mgmt",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": "2026-08-22",
+      "desc": "Leads the entire fund administration function for a third-party administrator - client service delivery, financial reporting, tax provision, N-PORT, expense analysis and fund distribution - plus team leadership and platform strategy. Reports to the COO. Fully remote. 7+ yrs fund admin with proven leadership. Pay commensurate with experience. NEW this run, actively reviewing applicants."
+    },
+    {
+      "title": "Director, Fund Administration (Accounting)",
+      "src": "Juniper Square - Careers",
+      "url": "https://careers.redpoint.com/companies/juniper-square/jobs/35518608-director-fund-administration-accounting",
+      "focus": "Fund Admin",
+      "level": "Director",
+      "industry": "Fintech",
+      "salaryMin": 180000,
+      "salaryLabel": "$180K-$200K",
+      "datePosted": null,
+      "desc": "Fund administration and accounting leadership at a fund-tech platform. Fully remote US/Canada. $180,000-$200,000 US. 12+ yrs. Still resolving and accepting applications as of Aug 23, but the board shows it posted 6+ months ago - treat as a long-running req."
+    },
+    {
+      "title": "Director, Quality Control - BSA/AML & Sanctions Operations",
+      "src": "Pathward, N.A. - Careers",
+      "url": "https://job-boards.greenhouse.io/pathward/jobs/6149775004",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Banking",
+      "salaryMin": 86000,
+      "salaryLabel": "$86K-$145K",
+      "datePosted": "2026-08-21",
+      "desc": "Owns Pathward's first independent QC function across BSA/AML and sanctions operations, reporting to the SVP/Deputy BSA-AML Officer. Builds the QC program, sampling methodology and error taxonomy, and leads a multi-tier team. CAMS required; 10+ yrs BSA/AML and 5+ yrs people leadership. Fully remote US. NEW this run."
+    },
+    {
+      "title": "Head of Compliance (capital markets infrastructure firm)",
+      "src": "Madison-Davis - via LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4437619025/",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
+      "salaryMin": 250000,
+      "salaryLabel": "Starting at $250K",
+      "datePosted": "2026-08-19",
+      "desc": "Builds and scales the compliance program at a securities-servicing / capital-markets infrastructure company: AML, sanctions, KYC/KYB, CDD, customer onboarding, beneficial ownership and regulatory exams, reporting to executives and the board. Fully remote US, starting at $250K. NEW this run. Note: posted by search firm Madison-Davis - the employer is not named in the listing."
+    },
+    {
+      "title": "Business Risk Program Director (BSA Advisor)",
+      "src": "Pathward, N.A. - Careers",
+      "url": "https://job-boards.greenhouse.io/pathward/jobs/6101758004",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Banking",
+      "salaryMin": 104000,
+      "salaryLabel": "$104K-$174K",
+      "datePosted": null,
+      "desc": "BSA advisory across business lines at a BaaS-focused bank. Fully remote US. $104,000-$174,000. 12+ yrs. Verified active Aug 23."
+    },
+    {
+      "title": "Senior Manager, Fraud and AML",
+      "src": "Rocket Money - Careers",
+      "url": "https://job-boards.greenhouse.io/truebill/jobs/7787125003",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Fintech",
+      "salaryMin": 150000,
+      "salaryLabel": "$150K-$180K",
+      "datePosted": null,
+      "desc": "Leads the dedicated financial-crime function at a consumer fintech. Fully remote US. $150,000-$180,000 plus bonus. Title reads Senior Manager but the role is a function lead - included under the senior-leadership exception. Verified active Aug 23."
+    },
+    {
+      "title": "Head of Compliance",
+      "src": "Cache Financials - via LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4450270913/",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Wealth Mgmt",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Leads compliance across a FINRA broker-dealer and an SEC-registered adviser at a lean, profitable exchange-fund fintech. Directs the AML program (AML/KYC, watchlist screening, 314(b)) and owns investor onboarding and subscription requirements. Remote, US. 10+ yrs. NEW this run. Note: J.D. strongly preferred and Series 14 or 7/24 preferred - a stretch on the securities-licensing side."
     },
     {
       "title": "Fund Migrations Senior Manager",
@@ -23,55 +143,31 @@
       "salaryMin": null,
       "salaryLabel": "",
       "datePosted": null,
-      "desc": "Fully remote (US/Canada). Leads full-lifecycle fund administration and fund migrations - fund onboarding, accounting operations, financial reporting, capital activity, investor servicing - for a VC / alternative-investment fund administrator. 10+ yrs fund admin, 5+ leading teams. Direct-source (Greenhouse). Verified active Aug 3."
+      "desc": "Leads full-lifecycle fund administration and fund migrations - fund onboarding, accounting operations, financial reporting, capital activity, investor servicing - plus the team, for a VC / alternative-investment fund administrator. Fully remote US/Canada. 10+ yrs fund admin, 5+ leading teams. Verified active Aug 23."
+    },
+    {
+      "title": "Director, Financial Crimes Technology",
+      "src": "Pathward, N.A. - Careers",
+      "url": "https://job-boards.greenhouse.io/pathward/jobs/6099952004",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Banking",
+      "salaryMin": 86000,
+      "salaryLabel": "$86K-$145K",
+      "datePosted": null,
+      "desc": "BSA/AML models and detection technology at a BaaS-focused bank. Fully remote US. $86,000-$145,000. Technology-leaning versus pure ops leadership. Verified active Aug 23."
     },
     {
       "title": "Senior Manager, Fund Administration",
-      "src": "Tides Network - via RemoteHunter",
-      "url": "https://www.remotehunter.com/apply-with-ai/0e47ab5f-8ecb-4bd5-90e6-f5330d2910db",
+      "src": "Tides - via LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4418530420/",
       "focus": "Fund Admin",
       "level": "Director",
       "industry": "Nonprofit Funds",
       "salaryMin": 112400,
-      "salaryLabel": "$112K-$169K",
+      "salaryLabel": "$112.4K-$168.6K",
       "datePosted": null,
-      "desc": "Leads Tides Foundation's fund administration function and manages a team of fund administrators (stewardship, workflow, regulatory compliance). Fully remote, $112,400-168,600. Nonprofit/philanthropic funds (function fit, industry adjacent). Listed ~2 months ago, still marked now hiring."
-    },
-    {
-      "title": "Registered Fund Administration, Director",
-      "src": "PINE Advisor Solutions - via LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4442164096/",
-      "focus": "Fund Admin",
-      "level": "Director",
-      "industry": "Asset Mgmt",
-      "salaryMin": 135000,
-      "salaryLabel": "$135K-$175K",
-      "datePosted": "2026-07-20",
-      "desc": "Named Principal Financial Officer / Treasurer for 1940 Act registered funds; oversees fund administration, regulatory filings (N-CSR, N-PORT), audit/tax. Fully remote (US), 10+ yrs fund accounting/administration. Verified active Aug 3."
-    },
-    {
-      "title": "Director, Fund Administration (Accounting)",
-      "src": "Juniper Square - via LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4414779706/",
-      "focus": "Fund Admin",
-      "level": "Director",
-      "industry": "Fintech",
-      "salaryMin": null,
-      "salaryLabel": "",
-      "datePosted": "2026-06-28",
-      "desc": "Fund administration and accounting leadership at a fund-tech platform. Remote (US). Verified active Aug 3."
-    },
-    {
-      "title": "Director - Real Estate Credit, Fund Administration",
-      "src": "Juniper Square - via LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4424610451/",
-      "focus": "Fund Admin",
-      "level": "Director",
-      "industry": "PE/Hedge",
-      "salaryMin": null,
-      "salaryLabel": "",
-      "datePosted": "2026-06-28",
-      "desc": "Fund administration for real estate credit funds. Remote (US). Verified active Aug 3."
+      "desc": "Leads Tides Foundation's fund administration function and a team of fund administrators - stewardship, workflow, controls and regulatory compliance across DAF/CAF/SEF structures. Fully remote US. $112,400-$168,600. Nonprofit/philanthropic funds: strong function fit, adjacent industry. Reposted on LinkedIn Aug 22 after being unverifiable in earlier runs; the original listing asked for applications by July 8, 2026."
     }
   ]
 }
