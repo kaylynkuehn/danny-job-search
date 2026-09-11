@@ -23,6 +23,14 @@ Search all of these, not just LinkedIn:
 3. **Independent web search, ATS-targeted** - restrict to direct applicant-tracking systems: `boards.greenhouse.io`, `job-boards.greenhouse.io`, `jobs.lever.co`, `*.myworkdayjobs.com`, `jobs.ashbyhq.com`. This is where real individual postings live.
 4. **RemoteHunter** - https://www.remotehunter.com/jobs?search=<term> (no login needed). Job links are `/apply-with-ai/<id>`.
 
+5. **ZipRecruiter connector** (MCP tool in Kaylyn's Claude account) - filter `location_types: REMOTE` + `seniority_classes: SENIOR`. Returns 5 results per call, so page with `offset`. **Its salary figures are ZipRecruiter estimates, not posted pay - never put them on a card.** Use it to surface leads, then find the employer's own ATS link before publishing.
+
+### Job board connectors (tested 2026-09-11)
+
+- **ZipRecruiter** - works. Real remote + senior filters, real employer links. Skews community bank over fintech, and salaries are estimates. Worth a sweep every run.
+- **Indeed** - do not rely on it. Its relevance matching collapses on senior finance-compliance titles: "Director BSA AML Financial Crimes, remote" returned a Chief Compliance Officer at a school-website company; "Director Fund Administration" returned Harvard, Yale, and a part-time development specialist.
+- **Snagajob** - hourly and shift work. Not relevant to this search.
+
 Search terms: "Fund Administration", "KYC" / "AML" / "BSA", "Investment Operations", "Client Onboarding" / "Investor Onboarding", plus senior compliance titles ("BSA Officer", "MLRO", "Head of Compliance", "Financial Crimes").
 
 ## Curation rules
@@ -44,6 +52,17 @@ Search terms: "Fund Administration", "KYC" / "AML" / "BSA", "Investment Operatio
 
 - LinkedIn: a closed posting shows a red "No longer accepting applications" banner on the job page (visible when logged in). LinkedIn blocks automated fetching via robots.txt, so check this in the logged-in browser.
 - ATS/other: a closed role usually 404s or shows an inactive/closed notice.
+
+## Known access limits (what breaks a run)
+
+Hit repeatedly through 2026-09-11. Read before assuming a source is dead.
+
+- **Workday postings are JS-rendered.** `*.myworkdayjobs.com` returns only meta tags to the fetch tool, so WEX, UMB, Texas Capital, HedgeServ, CIBC and AML RightSource leads cannot be verified that way. **Open them in the logged-in browser instead.**
+- **LinkedIn and RemoteHunter block the fetch tool via robots.txt.** Browser only. On LinkedIn, the logged-in job page reliably gives title, company, location and the closed-posting banner, but the description body sometimes will not render at all - when that happens, leave the role off the dashboard rather than publishing on a title alone.
+- **Claude's cloud container has no general internet.** Every request outside the package registries is refused at the proxy, so there is no curl, no clone and no `git push` from there. `jobs.json` must be committed through the GitHub web editor in the logged-in browser.
+- **Claude's built-in browser is a separate profile and is not signed in to LinkedIn.** It is a fallback for open sites only.
+- **GitHub's web editor uses CodeMirror 6**, reachable at `document.querySelector('.cm-content').cmTile.view`. Dispatch a full-document change against it, then click "Commit changes...".
+- **A cloud-scheduled run cannot do any of this.** No logged-in Chrome, no Messages, no commit path. The weekly task has to run on the computer.
 
 ## Learnings (2026-08-03 run)
 
