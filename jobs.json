@@ -1,6 +1,18 @@
 {
-  "updated": "2026-08-23",
+  "updated": "2026-09-11",
   "jobs": [
+    {
+      "title": "Head of Financial Crimes",
+      "src": "Flex - Careers",
+      "url": "https://jobs.lever.co/Flex/f7e32fb8-1ef1-41aa-8fd3-fa41bc0037e4",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
+      "salaryMin": 210000,
+      "salaryLabel": "$210K-$260K+",
+      "datePosted": null,
+      "desc": "Builds and owns the global financial crime risk function at a fast-growing fintech serving business owners - BSA/AML program, controls, regulatory relationships, and crypto/stablecoin compliance - partnering with the Chief Compliance Officer. Fully remote US. $210,000-$260,000+ plus equity. 7-10+ yrs. Re-verified active Sep 11."
+    },
     {
       "title": "Deputy BSA Officer, Financial Crime Compliance & Risk",
       "src": "Marqeta - Careers",
@@ -11,7 +23,7 @@
       "salaryMin": 175800,
       "salaryLabel": "$175.8K-$219.7K",
       "datePosted": null,
-      "desc": "Deputy to the BSA Officer at a major card-issuing fintech. Owns financial crime compliance program design, regulatory engagement and sponsor-bank oversight. Fully remote US (Flex First; Oakland office optional). 13+ yrs. National band $175,800-$219,700; premium tiers run higher. Verified active Aug 23."
+      "desc": "Deputy to the BSA Officer at a major card-issuing fintech. Owns financial crime compliance program design, regulatory engagement and sponsor-bank oversight. Fully remote US (Flex First; Oakland office optional). 13+ yrs. National band $175,800-$219,700; premium tiers run to $258,500. Re-verified active Sep 11."
     },
     {
       "title": "Senior Director, Fund Administration (Real Estate Credit)",
@@ -23,7 +35,19 @@
       "salaryMin": 190000,
       "salaryLabel": "$190K-$230K",
       "datePosted": null,
-      "desc": "Senior leadership over real-estate-credit fund administration at a fund-tech platform. Fully remote US available. $190,000-$230,000 base plus bonus and equity. Verified active Aug 23."
+      "desc": "Senior leadership over real-estate-credit fund administration at a fund-tech platform. Fully remote US available. $190,000-$230,000 base plus bonus and equity. Re-verified active Sep 11."
+    },
+    {
+      "title": "Head of Compliance",
+      "src": "Astra - Careers",
+      "url": "https://jobs.ashbyhq.com/astra/2b9ad210-94a9-4392-989d-3f90e1857d08",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Scales enterprise compliance - financial crimes, payments, privacy and governance - at an instant-payments platform moving billions annually, and serves as the designated BSA/AML Compliance Officer. Leads an established team and reports to the COO. Remote, US only. No salary listed. Re-verified active Sep 11."
     },
     {
       "title": "BSA Officer / Money Laundering Reporting Officer (MLRO)",
@@ -35,55 +59,7 @@
       "salaryMin": null,
       "salaryLabel": "",
       "datePosted": "2026-08-18",
-      "desc": "Designated BSA Officer / MLRO owning the full AML, CFT, OFAC and BSA program - SAR/CTR determinations, CIP/EDD, sanctions screening, FinCEN 314(a)/(b), and direct reporting to the CEO and Board. Sponsor-bank liaison. Fully remote, must reside in the US. 5+ yrs BSA/AML or MLRO experience. Up-and-coming crypto-card fintech. NEW this run."
-    },
-    {
-      "title": "Head of Compliance (Americas)",
-      "src": "OpenFX - Careers",
-      "url": "https://job-boards.greenhouse.io/openfx/jobs/4993976008",
-      "focus": "KYC/AML/BSA",
-      "level": "Head",
-      "industry": "Fintech",
-      "salaryMin": null,
-      "salaryLabel": "",
-      "datePosted": null,
-      "desc": "Americas compliance leadership at an up-and-coming FX/payments fintech. AML/BSA program ownership. Remote (USA) or Miami. 10+ yrs. No salary listed. Verified active Aug 23."
-    },
-    {
-      "title": "Head of Fund Administration",
-      "src": "Nottingham - via LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/4456673392/",
-      "focus": "Fund Admin",
-      "level": "Head",
-      "industry": "Asset Mgmt",
-      "salaryMin": null,
-      "salaryLabel": "",
-      "datePosted": "2026-08-22",
-      "desc": "Leads the entire fund administration function for a third-party administrator - client service delivery, financial reporting, tax provision, N-PORT, expense analysis and fund distribution - plus team leadership and platform strategy. Reports to the COO. Fully remote. 7+ yrs fund admin with proven leadership. Pay commensurate with experience. NEW this run, actively reviewing applicants."
-    },
-    {
-      "title": "Director, Fund Administration (Accounting)",
-      "src": "Juniper Square - Careers",
-      "url": "https://careers.redpoint.com/companies/juniper-square/jobs/35518608-director-fund-administration-accounting",
-      "focus": "Fund Admin",
-      "level": "Director",
-      "industry": "Fintech",
-      "salaryMin": 180000,
-      "salaryLabel": "$180K-$200K",
-      "datePosted": null,
-      "desc": "Fund administration and accounting leadership at a fund-tech platform. Fully remote US/Canada. $180,000-$200,000 US. 12+ yrs. Still resolving and accepting applications as of Aug 23, but the board shows it posted 6+ months ago - treat as a long-running req."
-    },
-    {
-      "title": "Director, Quality Control - BSA/AML & Sanctions Operations",
-      "src": "Pathward, N.A. - Careers",
-      "url": "https://job-boards.greenhouse.io/pathward/jobs/6149775004",
-      "focus": "KYC/AML/BSA",
-      "level": "Director",
-      "industry": "Banking",
-      "salaryMin": 86000,
-      "salaryLabel": "$86K-$145K",
-      "datePosted": "2026-08-21",
-      "desc": "Owns Pathward's first independent QC function across BSA/AML and sanctions operations, reporting to the SVP/Deputy BSA-AML Officer. Builds the QC program, sampling methodology and error taxonomy, and leads a multi-tier team. CAMS required; 10+ yrs BSA/AML and 5+ yrs people leadership. Fully remote US. NEW this run."
+      "desc": "Designated BSA Officer / MLRO owning the full AML, CFT, OFAC and BSA program - SAR/CTR determinations, CIP/EDD, sanctions screening, FinCEN 314(a)/(b), and direct reporting to the CEO and Board. Sponsor-bank liaison. Fully remote, must reside in the US. 5+ yrs BSA/AML or MLRO experience. Up-and-coming crypto-card fintech. Re-verified active Sep 11."
     },
     {
       "title": "Head of Compliance (capital markets infrastructure firm)",
@@ -98,6 +74,90 @@
       "desc": "Builds and scales the compliance program at a securities-servicing / capital-markets infrastructure company: AML, sanctions, KYC/KYB, CDD, customer onboarding, beneficial ownership and regulatory exams, reporting to executives and the board. Fully remote US, starting at $250K. NEW this run. Note: posted by search firm Madison-Davis - the employer is not named in the listing."
     },
     {
+      "title": "Director of AML & Virtual Asset Compliance",
+      "src": "CertiK - Careers",
+      "url": "https://jobs.lever.co/certik/36fa63d5-f3e0-4529-8c87-392aab2763a1",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Fintech",
+      "salaryMin": 150000,
+      "salaryLabel": "$150K-$220K",
+      "datePosted": null,
+      "desc": "Builds AML and virtual-asset compliance frameworks at a web3 security firm and acts as subject-matter expert for financial institutions and VASPs, translating blockchain risk into product requirements. Remote, with US among the listed locations. $150,000-$220,000 for US-based. Re-verified active Sep 11."
+    },
+    {
+      "title": "Executive Vice President of Fund Operations",
+      "src": "Tidal Financial Group - Careers",
+      "url": "https://ats.rippling.com/open-roles/jobs/6067741c-7d10-475f-994a-c322972e3523",
+      "focus": "Fund Admin",
+      "level": "Head",
+      "industry": "Asset Mgmt",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": "2026-09-10",
+      "desc": "Leads and scales the fund administration function inside an ETF platform - fund accounting, valuation, regulatory filings, board reporting, audit coordination, liquidity monitoring and operational risk - and manages external service providers. Fully remote US. 15+ yrs ETF fund operations leading large teams. No salary listed. NEW this run, posted Sep 10."
+    },
+    {
+      "title": "VP, BSA/AML Operations",
+      "src": "Pathward, N.A. - Careers",
+      "url": "https://job-boards.greenhouse.io/pathward/jobs/5830477004",
+      "focus": "KYC/AML/BSA",
+      "level": "VP",
+      "industry": "Banking",
+      "salaryMin": 125000,
+      "salaryLabel": "$125K-$208K",
+      "datePosted": null,
+      "desc": "Oversees suspicious activity monitoring operations at a BaaS-focused bank - investigations, regulatory responsiveness, and strategic build-out of the financial crimes compliance program. Fully remote US. $125,000-$208,000. Re-verified active Sep 11."
+    },
+    {
+      "title": "Head of Compliance (Americas)",
+      "src": "OpenFX - Careers",
+      "url": "https://job-boards.greenhouse.io/openfx/jobs/4993976008",
+      "focus": "KYC/AML/BSA",
+      "level": "Head",
+      "industry": "Fintech",
+      "salaryMin": null,
+      "salaryLabel": "",
+      "datePosted": null,
+      "desc": "Americas compliance leadership at an up-and-coming FX/payments fintech. AML/BSA program ownership. Remote (USA) or Miami. 10+ yrs. No salary listed. Re-verified active Sep 11."
+    },
+    {
+      "title": "Director - Real Estate Credit, Fund Administration (Accounting)",
+      "src": "Juniper Square - Careers",
+      "url": "https://careers.redpoint.com/companies/juniper-square/jobs/81749230-director-real-estate-credit-fund-administration-accounting",
+      "focus": "Fund Admin",
+      "level": "Director",
+      "industry": "Fintech",
+      "salaryMin": 180000,
+      "salaryLabel": "$180K-$200K",
+      "datePosted": null,
+      "desc": "Runs fund accounting operations for real-estate private credit clients - NAV, financial statements and complex waterfalls - leading a team of accountants and acting as senior client contact. Fully remote US. $180,000-$200,000. NEW this run; a distinct req from the Senior Director role above."
+    },
+    {
+      "title": "Director, Fund Administration (Accounting)",
+      "src": "Juniper Square - Careers",
+      "url": "https://careers.redpoint.com/companies/juniper-square/jobs/35518608-director-fund-administration-accounting",
+      "focus": "Fund Admin",
+      "level": "Director",
+      "industry": "Fintech",
+      "salaryMin": 180000,
+      "salaryLabel": "$180K-$200K",
+      "datePosted": null,
+      "desc": "Fund administration and accounting leadership at a fund-tech platform. Fully remote US/Canada. $180,000-$200,000 US. 12+ yrs. Still open as of Sep 11, but the board shows it posted 6+ months ago - treat as a long-running req."
+    },
+    {
+      "title": "Director, Quality Control - BSA/AML & Sanctions Operations",
+      "src": "Pathward, N.A. - Careers",
+      "url": "https://job-boards.greenhouse.io/pathward/jobs/6149775004",
+      "focus": "KYC/AML/BSA",
+      "level": "Director",
+      "industry": "Banking",
+      "salaryMin": 86000,
+      "salaryLabel": "$86K-$145K",
+      "datePosted": "2026-08-21",
+      "desc": "Owns Pathward's first independent QC function across BSA/AML and sanctions operations, reporting to the SVP/Deputy BSA-AML Officer. Builds the QC program, sampling methodology and error taxonomy, and leads a multi-tier team. CAMS required; 10+ yrs BSA/AML and 5+ yrs people leadership. Fully remote US. Re-verified active Sep 11."
+    },
+    {
       "title": "Business Risk Program Director (BSA Advisor)",
       "src": "Pathward, N.A. - Careers",
       "url": "https://job-boards.greenhouse.io/pathward/jobs/6101758004",
@@ -107,7 +167,7 @@
       "salaryMin": 104000,
       "salaryLabel": "$104K-$174K",
       "datePosted": null,
-      "desc": "BSA advisory across business lines at a BaaS-focused bank. Fully remote US. $104,000-$174,000. 12+ yrs. Verified active Aug 23."
+      "desc": "BSA advisory across business lines at a BaaS-focused bank. Fully remote US. $104,000-$174,000. 12+ yrs. Re-verified active Sep 11."
     },
     {
       "title": "Senior Manager, Fraud and AML",
@@ -119,7 +179,7 @@
       "salaryMin": 150000,
       "salaryLabel": "$150K-$180K",
       "datePosted": null,
-      "desc": "Leads the dedicated financial-crime function at a consumer fintech. Fully remote US. $150,000-$180,000 plus bonus. Title reads Senior Manager but the role is a function lead - included under the senior-leadership exception. Verified active Aug 23."
+      "desc": "Leads the dedicated financial-crime function at a consumer fintech. Fully remote US. $150,000-$180,000 plus bonus. Title reads Senior Manager but the role is a function lead - included under the senior-leadership exception. Re-verified active Sep 11."
     },
     {
       "title": "Head of Compliance",
@@ -143,7 +203,7 @@
       "salaryMin": null,
       "salaryLabel": "",
       "datePosted": null,
-      "desc": "Leads full-lifecycle fund administration and fund migrations - fund onboarding, accounting operations, financial reporting, capital activity, investor servicing - plus the team, for a VC / alternative-investment fund administrator. Fully remote US/Canada. 10+ yrs fund admin, 5+ leading teams. Verified active Aug 23."
+      "desc": "Leads full-lifecycle fund administration and fund migrations - fund onboarding, accounting operations, financial reporting, capital activity, investor servicing - plus the team, for a VC / alternative-investment fund administrator. Fully remote US/Canada. 10+ yrs fund admin, 5+ leading teams. Re-verified active Sep 11."
     },
     {
       "title": "Director, Financial Crimes Technology",
@@ -155,7 +215,7 @@
       "salaryMin": 86000,
       "salaryLabel": "$86K-$145K",
       "datePosted": null,
-      "desc": "BSA/AML models and detection technology at a BaaS-focused bank. Fully remote US. $86,000-$145,000. Technology-leaning versus pure ops leadership. Verified active Aug 23."
+      "desc": "BSA/AML models and detection technology at a BaaS-focused bank. Fully remote US. $86,000-$145,000. Technology-leaning versus pure ops leadership. Re-verified active Sep 11."
     },
     {
       "title": "Senior Manager, Fund Administration",
@@ -167,7 +227,7 @@
       "salaryMin": 112400,
       "salaryLabel": "$112.4K-$168.6K",
       "datePosted": null,
-      "desc": "Leads Tides Foundation's fund administration function and a team of fund administrators - stewardship, workflow, controls and regulatory compliance across DAF/CAF/SEF structures. Fully remote US. $112,400-$168,600. Nonprofit/philanthropic funds: strong function fit, adjacent industry. Reposted on LinkedIn Aug 22 after being unverifiable in earlier runs; the original listing asked for applications by July 8, 2026."
+      "desc": "Leads Tides Foundation's fund administration function and a team of fund administrators - stewardship, workflow, controls and regulatory compliance across DAF/CAF/SEF structures. Fully remote US. $112,400-$168,600. Nonprofit/philanthropic funds: strong function fit, adjacent industry. Re-verified active Sep 11; the original listing asked for applications by July 8, 2026."
     }
   ]
 }
