@@ -1,0 +1,692 @@
+{
+ "person": "Danny",
+ "generated": "2026-09-29",
+ "runs": [
+  {
+   "date": "2026-07-12",
+   "count": 8,
+   "note": "First dashboard: LinkedIn postings"
+  },
+  {
+   "date": "2026-07-26",
+   "count": 9,
+   "note": "Added PINE Director"
+  },
+  {
+   "date": "2026-08-03",
+   "count": 6,
+   "note": "Multi-source rebuild; 6 of 9 LinkedIn carryovers found closed"
+  },
+  {
+   "date": "2026-08-05",
+   "count": 7,
+   "note": "Cloud run: verified list, not committed to the site"
+  },
+  {
+   "date": "2026-08-12",
+   "count": 7,
+   "note": "Cloud run: verified list, not committed to the site"
+  },
+  {
+   "date": "2026-08-19",
+   "count": 8,
+   "note": "Cloud run: verified list, not committed to the site"
+  },
+  {
+   "date": "2026-08-23",
+   "count": 14,
+   "note": "Verified refresh committed (14 roles)"
+  },
+  {
+   "date": "2026-09-02",
+   "count": null,
+   "note": "Blocked: cloud run could not verify or commit"
+  },
+  {
+   "date": "2026-09-09",
+   "count": null,
+   "note": "Blocked: cloud run could not verify or commit"
+  },
+  {
+   "date": "2026-09-11",
+   "count": 19,
+   "note": "Verified refresh committed (19 roles: +6 new, -1 closed)"
+  },
+  {
+   "date": "2026-09-16",
+   "count": null,
+   "note": "Blocked: cloud run could not verify or commit"
+  }
+ ],
+ "roles": [
+  {
+   "company": "Alpaca",
+   "title": "Director, Digital Asset & Brokerage Operations",
+   "url": "https://www.linkedin.com/jobs/view/director-digital-asset-brokerage-operations-at-alpaca-4426380215",
+   "focus": "Investment Ops",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-06-12",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "Aventum Search",
+   "title": "Vice President, Operations",
+   "url": "https://www.linkedin.com/jobs/view/vice-president-operations-at-aventum-search-4434789495",
+   "focus": "Investment Ops",
+   "level": "VP",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-07-05",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "Axonic Insurance",
+   "title": "Director, Client Integration (DTCC)",
+   "url": "https://www.linkedin.com/jobs/view/director-client-integration-dtcc-at-axonic-insurance-4430317496",
+   "focus": "Client Onboarding",
+   "level": "Director",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-06-21",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "Juniper Square",
+   "title": "Director, Fund Administration (Accounting)",
+   "url": "https://careers.redpoint.com/companies/juniper-square/jobs/35518608-director-fund-administration-accounting",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 180000,
+   "salaryLabel": "$180K-$200K",
+   "datePosted": "2026-06-28",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26",
+    "2026-08-03",
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Juniper Square",
+   "title": "Senior Director, Fund Administration (Real Estate Credit)",
+   "url": "https://careers.redpoint.com/companies/juniper-square/jobs/86758886-senior-director-fund-administration-real-estate-credit",
+   "focus": "Fund Admin",
+   "level": "Senior Director",
+   "industry": "Fintech",
+   "salaryMin": 190000,
+   "salaryLabel": "$190K-$230K",
+   "datePosted": "2026-06-28",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26",
+    "2026-08-03",
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Nymbus",
+   "title": "SVP, Banking Operations",
+   "url": "https://www.linkedin.com/jobs/view/svp-banking-operations-at-nymbus-4435335487",
+   "focus": "Investment Ops",
+   "level": "VP",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-07-05",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "OSL",
+   "title": "MLRO (US) - Money Laundering Reporting Officer",
+   "url": "https://www.linkedin.com/jobs/view/mlro-us-at-osl-4429828197",
+   "focus": "KYC/AML",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-06-28",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "Strata",
+   "title": "Director, Investment Operations (Philadelphia / Delaware Lead)",
+   "url": "https://www.linkedin.com/jobs/view/director-investment-operations-%E2%80%93-greater-philadelphia-delaware-lead-at-strata-4429411391",
+   "focus": "Investment Ops",
+   "level": "Director",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-06-28",
+   "firstSeen": "2026-07-12",
+   "lastSeen": "2026-07-26",
+   "seen": [
+    "2026-07-12",
+    "2026-07-26"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-03",
+   "reason": "Closed: \"No longer accepting applications\" on the Aug 3 recheck",
+   "daysListed": null
+  },
+  {
+   "company": "PINE Advisor Solutions",
+   "title": "Registered Fund Administration, Director",
+   "url": "https://www.linkedin.com/jobs/view/4442164096/",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "Asset Mgmt",
+   "salaryMin": 135000,
+   "salaryLabel": "$135K-$175K",
+   "datePosted": "2026-07-20",
+   "firstSeen": "2026-07-26",
+   "lastSeen": "2026-08-05",
+   "seen": [
+    "2026-07-26",
+    "2026-08-03",
+    "2026-08-05"
+   ],
+   "status": "closed",
+   "removedOn": "2026-08-12",
+   "reason": "Closed: \"no current openings\" on the Aug 12 check",
+   "daysListed": null
+  },
+  {
+   "company": "Alter Domus",
+   "title": "Senior Product Leader - Accounting & Credit Fund Administration",
+   "url": "https://www.linkedin.com/jobs/view/4430987336/",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "PE/Hedge",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-08-02",
+   "firstSeen": "2026-08-03",
+   "lastSeen": "2026-08-03",
+   "seen": [
+    "2026-08-03"
+   ],
+   "status": "dropped",
+   "removedOn": "2026-08-05",
+   "reason": "Dropped Aug 5: could not verify (LinkedIn), product-leaning",
+   "daysListed": null
+  },
+  {
+   "company": "Belltower Fund Group",
+   "title": "Fund Migrations Senior Manager",
+   "url": "https://job-boards.greenhouse.io/belltowerfundgroup/jobs/5362164008",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "PE/Hedge",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-08-03",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-03",
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Tides",
+   "title": "Senior Manager, Fund Administration",
+   "url": "https://www.linkedin.com/jobs/view/4418530420/",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "Nonprofit Funds",
+   "salaryMin": 112400,
+   "salaryLabel": "$112.4K-$168.6K",
+   "datePosted": null,
+   "firstSeen": "2026-08-03",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-03",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Dropped Aug 5 as unverifiable, re-added Aug 23 via LinkedIn",
+   "daysListed": null
+  },
+  {
+   "company": "Marqeta",
+   "title": "Deputy BSA Officer, Financial Crime Compliance & Risk",
+   "url": "https://job-boards.greenhouse.io/mqreferrals/jobs/8055234",
+   "focus": "KYC/AML/BSA",
+   "level": "VP",
+   "industry": "Fintech",
+   "salaryMin": 175800,
+   "salaryLabel": "$175.8K-$219.7K",
+   "datePosted": null,
+   "firstSeen": "2026-08-05",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "OpenFX",
+   "title": "Americas Compliance Manager and BSA Officer",
+   "url": "",
+   "focus": "",
+   "level": "",
+   "industry": "",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-08-05",
+   "lastSeen": "2026-08-05",
+   "seen": [
+    "2026-08-05"
+   ],
+   "status": "retitled",
+   "removedOn": "2026-08-12",
+   "reason": "Retitled as \"Head of Compliance (Americas)\" by Aug 12",
+   "daysListed": null
+  },
+  {
+   "company": "Pathward, N.A.",
+   "title": "Director, Financial Crimes Technology",
+   "url": "https://job-boards.greenhouse.io/pathward/jobs/6099952004",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Banking",
+   "salaryMin": 86000,
+   "salaryLabel": "$86K-$145K",
+   "datePosted": null,
+   "firstSeen": "2026-08-05",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "OpenFX",
+   "title": "Head of Compliance (Americas)",
+   "url": "https://job-boards.greenhouse.io/openfx/jobs/4993976008",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-08-12",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Rocket Money",
+   "title": "Senior Manager, Fraud and AML",
+   "url": "https://job-boards.greenhouse.io/truebill/jobs/7787125003",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 150000,
+   "salaryLabel": "$150K-$180K",
+   "datePosted": null,
+   "firstSeen": "2026-08-12",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Pathward, N.A.",
+   "title": "Business Risk Program Director (BSA Advisor)",
+   "url": "https://job-boards.greenhouse.io/pathward/jobs/6101758004",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Banking",
+   "salaryMin": 104000,
+   "salaryLabel": "$104K-$174K",
+   "datePosted": null,
+   "firstSeen": "2026-08-19",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-19",
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Cache Financials",
+   "title": "Head of Compliance",
+   "url": "https://www.linkedin.com/jobs/view/4450270913/",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Wealth Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-08-23",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "KAST",
+   "title": "BSA Officer / Money Laundering Reporting Officer (MLRO)",
+   "url": "https://www.linkedin.com/jobs/view/4455713503/",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-08-18",
+   "firstSeen": "2026-08-23",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Madison-Davis",
+   "title": "Head of Compliance (capital markets infrastructure firm)",
+   "url": "https://www.linkedin.com/jobs/view/4437619025/",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": 250000,
+   "salaryLabel": "Starting at $250K",
+   "datePosted": "2026-08-19",
+   "firstSeen": "2026-08-23",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Nottingham",
+   "title": "Head of Fund Administration",
+   "url": "https://www.linkedin.com/jobs/view/4456673392/",
+   "focus": "Fund Admin",
+   "level": "Head",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-08-22",
+   "firstSeen": "2026-08-23",
+   "lastSeen": "2026-08-23",
+   "seen": [
+    "2026-08-23"
+   ],
+   "status": "removed",
+   "removedOn": "2026-09-11",
+   "reason": "No longer on the dashboard at the next verified run (closed or dropped)",
+   "daysListed": null
+  },
+  {
+   "company": "Pathward, N.A.",
+   "title": "Director, Quality Control - BSA/AML & Sanctions Operations",
+   "url": "https://job-boards.greenhouse.io/pathward/jobs/6149775004",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Banking",
+   "salaryMin": 86000,
+   "salaryLabel": "$86K-$145K",
+   "datePosted": "2026-08-21",
+   "firstSeen": "2026-08-23",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-08-23",
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Astra",
+   "title": "Head of Compliance",
+   "url": "https://jobs.ashbyhq.com/astra/2b9ad210-94a9-4392-989d-3f90e1857d08",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "CertiK",
+   "title": "Director of AML & Virtual Asset Compliance",
+   "url": "https://jobs.lever.co/certik/36fa63d5-f3e0-4529-8c87-392aab2763a1",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 150000,
+   "salaryLabel": "$150K-$220K",
+   "datePosted": null,
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Flex",
+   "title": "Head of Financial Crimes",
+   "url": "https://jobs.lever.co/Flex/f7e32fb8-1ef1-41aa-8fd3-fa41bc0037e4",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": 210000,
+   "salaryLabel": "$210K-$260K+",
+   "datePosted": null,
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Juniper Square",
+   "title": "Director - Real Estate Credit, Fund Administration (Accounting)",
+   "url": "https://careers.redpoint.com/companies/juniper-square/jobs/81749230-director-real-estate-credit-fund-administration-accounting",
+   "focus": "Fund Admin",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 180000,
+   "salaryLabel": "$180K-$200K",
+   "datePosted": null,
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Pathward, N.A.",
+   "title": "VP, BSA/AML Operations",
+   "url": "https://job-boards.greenhouse.io/pathward/jobs/5830477004",
+   "focus": "KYC/AML/BSA",
+   "level": "VP",
+   "industry": "Banking",
+   "salaryMin": 125000,
+   "salaryLabel": "$125K-$208K",
+   "datePosted": null,
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Tidal Financial Group",
+   "title": "Executive Vice President of Fund Operations",
+   "url": "https://ats.rippling.com/open-roles/jobs/6067741c-7d10-475f-994a-c322972e3523",
+   "focus": "Fund Admin",
+   "level": "Head",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": "2026-09-10",
+   "firstSeen": "2026-09-11",
+   "lastSeen": "2026-09-11",
+   "seen": [
+    "2026-09-11"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  }
+ ]
+}
