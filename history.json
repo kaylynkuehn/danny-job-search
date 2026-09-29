@@ -56,6 +56,11 @@
    "date": "2026-09-16",
    "count": null,
    "note": "Blocked: cloud run could not verify or commit"
+  },
+  {
+   "date": "2026-09-29",
+   "count": 10,
+   "note": "Verified refresh committed (10 roles: +6 new, -15 closed/dropped)"
   }
  ],
  "roles": [
@@ -144,15 +149,15 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: \"no longer accepting applications\" on Sep 29",
    "daysListed": null
   },
   {
    "company": "Juniper Square",
    "title": "Senior Director, Fund Administration (Real Estate Credit)",
-   "url": "https://careers.redpoint.com/companies/juniper-square/jobs/86758886-senior-director-fund-administration-real-estate-credit",
+   "url": "https://jobs.ashbyhq.com/junipersquare/db6830de-10da-4888-9f17-6c78b700eccb",
    "focus": "Fund Admin",
    "level": "Senior Director",
    "industry": "Fintech",
@@ -160,7 +165,7 @@
    "salaryLabel": "$190K-$230K",
    "datePosted": "2026-06-28",
    "firstSeen": "2026-07-12",
-   "lastSeen": "2026-09-11",
+   "lastSeen": "2026-09-29",
    "seen": [
     "2026-07-12",
     "2026-07-26",
@@ -169,7 +174,8 @@
     "2026-08-12",
     "2026-08-19",
     "2026-08-23",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-29"
    ],
    "status": "open",
    "removedOn": null,
@@ -301,9 +307,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -323,9 +329,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Dropped Aug 5 as unverifiable, re-added Aug 23 via LinkedIn",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: \"No longer accepting applications\" on Sep 29",
    "daysListed": null
   },
   {
@@ -347,9 +353,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: Greenhouse board inactive on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -391,9 +397,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -414,9 +420,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -437,9 +443,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -459,9 +465,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -480,9 +486,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: \"No longer accepting applications\" on Sep 29",
    "daysListed": null
   },
   {
@@ -496,10 +502,11 @@
    "salaryLabel": "",
    "datePosted": "2026-08-18",
    "firstSeen": "2026-08-23",
-   "lastSeen": "2026-09-11",
+   "lastSeen": "2026-09-29",
    "seen": [
     "2026-08-23",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-29"
    ],
    "status": "open",
    "removedOn": null,
@@ -522,9 +529,9 @@
     "2026-08-23",
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: \"No longer accepting applications\" on Sep 29",
    "daysListed": null
   },
   {
@@ -558,10 +565,11 @@
    "salaryLabel": "$86K-$145K",
    "datePosted": "2026-08-21",
    "firstSeen": "2026-08-23",
-   "lastSeen": "2026-09-11",
+   "lastSeen": "2026-09-29",
    "seen": [
     "2026-08-23",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-29"
    ],
    "status": "open",
    "removedOn": null,
@@ -575,13 +583,14 @@
    "focus": "KYC/AML/BSA",
    "level": "Head",
    "industry": "Fintech",
-   "salaryMin": null,
-   "salaryLabel": "",
+   "salaryMin": 210000,
+   "salaryLabel": "$210K-$260K",
    "datePosted": null,
    "firstSeen": "2026-09-11",
-   "lastSeen": "2026-09-11",
+   "lastSeen": "2026-09-29",
    "seen": [
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-29"
    ],
    "status": "open",
    "removedOn": null,
@@ -603,9 +612,9 @@
    "seen": [
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "retitled",
+   "removedOn": "2026-09-29",
+   "reason": "Req now reads \"Director of Product, AML & Digital Asset Compliance\", a product role, so dropped Sep 29",
    "daysListed": null
   },
   {
@@ -623,9 +632,9 @@
    "seen": [
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: Lever 404 on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -643,9 +652,9 @@
    "seen": [
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: \"no longer accepting applications\" on Sep 29",
    "daysListed": null
   },
   {
@@ -663,9 +672,9 @@
    "seen": [
     "2026-09-11"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "closed",
+   "removedOn": "2026-09-29",
+   "reason": "Closed: posting gone (redirected to job board) on the Sep 29 recheck",
    "daysListed": null
   },
   {
@@ -682,6 +691,126 @@
    "lastSeen": "2026-09-11",
    "seen": [
     "2026-09-11"
+   ],
+   "status": "retitled",
+   "removedOn": "2026-09-29",
+   "reason": "EVP req gone Sep 29; Tidal now lists an SVP of Fund Operations",
+   "daysListed": null
+  },
+  {
+   "company": "Breeze",
+   "title": "Head of Compliance",
+   "url": "https://job-boards.greenhouse.io/breezecash/jobs/5406783008",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "River",
+   "title": "Chief Compliance Officer",
+   "url": "https://jobs.ashbyhq.com/river/d891b3a3-eddc-4293-b102-909a797d8048",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": 200000,
+   "salaryLabel": "$200K-$300K",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Traild",
+   "title": "Director of Compliance - US/CAN",
+   "url": "https://jobs.lever.co/traildsoftware/49dc2cd9-5147-41ab-a974-f4f0cd28a308",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 200000,
+   "salaryLabel": "$200K-$250K",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Mission Lane",
+   "title": "Senior Manager, AML/BSA Officer",
+   "url": "https://job-boards.greenhouse.io/missionlane/jobs/8806865002",
+   "focus": "KYC/AML/BSA",
+   "level": "Head",
+   "industry": "Fintech",
+   "salaryMin": 140000,
+   "salaryLabel": "$140K-$165K",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Tidal Financial Group",
+   "title": "SVP of Fund Operations",
+   "url": "https://ats.rippling.com/open-roles/jobs/a6f3383e-d231-414a-ae22-acc78ebfdb0b",
+   "focus": "Fund Admin",
+   "level": "SVP",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Tidal Financial Group",
+   "title": "Deputy Chief Compliance Officer",
+   "url": "https://ats.rippling.com/open-roles/jobs/5aa4b954-8c50-475b-a913-12f61420bb39",
+   "focus": "Compliance",
+   "level": "Head",
+   "industry": "Asset Mgmt",
+   "salaryMin": null,
+   "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
    ],
    "status": "open",
    "removedOn": null,
