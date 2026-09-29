@@ -108,3 +108,14 @@ On top of the hard rules above, favor these when choosing among qualified roles 
 - Lead the top 3 with the most on-brand fintech/startup fits when they clear every hard rule.
 
 These are tie-breakers and ranking signals only. Never relax the non-negotiables (fully remote US, senior level, on-focus function) just because a brand is exciting.
+
+## History log (update every run)
+
+`history.json` is the permanent backlog behind `history.html` (live: /history.html). Never delete roles from it. On every weekly refresh, after `jobs.json` is final:
+
+1. Append a run: `{"date":"YYYY-MM-DD","count":<roles published>,"note":"<one line>"}` to `runs`. If a run is blocked and nothing could be verified, append it with `"count":null` and say why in `note`.
+2. For every role in the new `jobs.json`: if it is already in `roles` (match on company + title), set `lastSeen` to today, add today to `seen`, keep `status:"open"`, refresh `url`/salary if they changed. Otherwise add it with `firstSeen` = `lastSeen` = today, `status:"open"`, `reason:"Still listed on the last verified run"`.
+3. For every role with `status:"open"` that is NOT in the new `jobs.json`: set `status` (`closed` = posting gone or no longer accepting applications, `applied` = Danny already applied, `dropped` = no longer fits criteria, `retitled` = same req re-posted under a new title), `removedOn` = today, and a short `reason`.
+4. Set `generated` to today.
+
+Role fields: `company, title, url, focus, level, industry, salaryMin, salaryLabel, datePosted, firstSeen, lastSeen, seen[], status, removedOn, reason`.
