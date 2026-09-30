@@ -59,8 +59,8 @@
   },
   {
    "date": "2026-09-29",
-   "count": 6,
-   "note": "Verified refresh, recalibrated to his level and a $160K pay floor (6 roles)"
+   "count": 7,
+   "note": "Verified refresh: compliance + finance/investment ops, pay aiming well above $160K (7 roles)"
   }
  ],
  "roles": [
@@ -772,9 +772,9 @@
    "seen": [
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: pay tops out at $165K; he wants well above the $160K floor",
    "daysListed": null
   },
   {
@@ -826,6 +826,46 @@
    "industry": "Fintech",
    "salaryMin": 160000,
    "salaryLabel": "$160K-$198K",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Pathward, N.A.",
+   "title": "Vice President, BSA/AML Operations - Cases",
+   "url": "https://job-boards.greenhouse.io/pathward/jobs/6173499004",
+   "focus": "KYC/AML/BSA",
+   "level": "VP",
+   "industry": "Banking",
+   "salaryMin": 125000,
+   "salaryLabel": "$125K-$208K",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "open",
+   "removedOn": null,
+   "reason": "Still listed on the last verified run",
+   "daysListed": null
+  },
+  {
+   "company": "Figure",
+   "title": "Director of Treasury & Financial Operations",
+   "url": "https://job-boards.greenhouse.io/figure/jobs/8709203002",
+   "focus": "Finance Ops",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 161000,
+   "salaryLabel": "$161K-$218.5K",
    "datePosted": null,
    "firstSeen": "2026-09-29",
    "lastSeen": "2026-09-29",
