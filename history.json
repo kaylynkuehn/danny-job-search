@@ -59,8 +59,8 @@
   },
   {
    "date": "2026-09-29",
-   "count": 7,
-   "note": "Verified refresh: compliance + finance/investment ops, pay aiming well above $160K (7 roles)"
+   "count": 6,
+   "note": "Verified refresh: compliance + finance ops, pay well above $160K (6 roles)"
   }
  ],
  "roles": [
@@ -852,9 +852,9 @@
    "seen": [
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: range starts at $125K, too low; target sits well above $160K",
    "daysListed": null
   },
   {
