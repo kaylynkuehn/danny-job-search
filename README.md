@@ -37,6 +37,9 @@ Search terms: "Fund Administration", "KYC" / "AML" / "BSA", "Investment Operatio
 
 - **Fully remote (US) is non-negotiable.** Drop anything hybrid or on-site, even if otherwise perfect (e.g. an in-office private-credit role is out).
 - **Level: VP / Director / Senior Director / Head only.** Exclude analyst, associate, and plain manager roles unless they are genuine senior leadership (a designated officer, or a function lead managing a team).
+- **Pay floor: $160K.** Drop any role whose posted range tops out below $160K. Roles with no posted pay can stay if the level fits.
+- **Calibrate to his real level, not the title.** Danny has ~8 years, all in KYC / client onboarding operations (team lead, AVP, VP). He has not been a named BSA officer, CCO, or fund-admin head. Target his *next step*: Director/VP of KYC or onboarding ops, AML/BSA Officer seats at small-to-mid fintechs, Director AML roles asking ~5-10 years. **Exclude** CCO / Deputy CCO seats, SVP/EVP roles, and anything asking 12+ years, even if the title and pay match. Head-of-compliance roles that want a prior named officer can be listed only as a labeled "Reach", never in the top 3.
+- Tag each card's desc as **Realistic**, **Stretch**, or **Reach** so Danny can see fit at a glance.
 - **On-focus:** KYC/AML/BSA, client/investor onboarding, investment operations, fund administration.
 - **On-industry:** asset mgmt, private credit, PE, hedge funds, alt investments, banking, fintech, wealth mgmt. Nonprofit/philanthropic-fund roles are adjacent - allow only when the function is a strong fund-admin/compliance fit, and label the industry honestly.
 - Show a salary badge only when the posting lists pay. Never invent salary or dates.
