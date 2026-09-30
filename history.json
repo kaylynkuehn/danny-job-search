@@ -59,8 +59,8 @@
   },
   {
    "date": "2026-09-29",
-   "count": 10,
-   "note": "Verified refresh committed (10 roles: +6 new, -15 closed/dropped)"
+   "count": 6,
+   "note": "Verified refresh, recalibrated to his level and a $160K pay floor (6 roles)"
   }
  ],
  "roles": [
@@ -177,9 +177,9 @@
     "2026-09-11",
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: fund-accounting leadership, not his lane",
    "daysListed": null
   },
   {
@@ -571,9 +571,9 @@
     "2026-09-11",
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: pay tops out at $145K, below the $160K floor",
    "daysListed": null
   },
   {
@@ -732,9 +732,9 @@
    "seen": [
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: CCO seat, well above his level",
    "daysListed": null
   },
   {
@@ -792,9 +792,9 @@
    "seen": [
     "2026-09-29"
    ],
-   "status": "open",
-   "removedOn": null,
-   "reason": "Still listed on the last verified run",
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: asks 12-15+ yrs, above his level",
    "daysListed": null
   },
   {
@@ -806,6 +806,26 @@
    "industry": "Asset Mgmt",
    "salaryMin": null,
    "salaryLabel": "",
+   "datePosted": null,
+   "firstSeen": "2026-09-29",
+   "lastSeen": "2026-09-29",
+   "seen": [
+    "2026-09-29"
+   ],
+   "status": "dropped",
+   "removedOn": "2026-09-29",
+   "reason": "Dropped Sep 29: asks 12-15+ yrs, above his level",
+   "daysListed": null
+  },
+  {
+   "company": "Paylocity",
+   "title": "Director AML Compliance",
+   "url": "https://www.paylocity.com/company/careers/all-listings.job.47946/",
+   "focus": "KYC/AML/BSA",
+   "level": "Director",
+   "industry": "Fintech",
+   "salaryMin": 160000,
+   "salaryLabel": "$160K-$198K",
    "datePosted": null,
    "firstSeen": "2026-09-29",
    "lastSeen": "2026-09-29",
